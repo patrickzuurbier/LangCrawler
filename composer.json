@@ -1,0 +1,33 @@
+{
+    "name": "patrickzuurbier/lang-crawler",
+    "description": "Searches through code for translation helpers and writes the lang files for each locale.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Zuurbier",
+            "email": "patrickzuurbier@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PatrickZuurbier\\LangCrawler\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PatrickZuurbier\\LangCrawler\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PatrickZuurbier\\LangCrawler\\LangCrawlerServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
